@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+  style.
+    body {
+        background-color: grey ;
+    }
+    table#t01 {
+        width: 100%;    
+        background-color: #f1f1c1;
+    }
+
+
+    #t01 th,td {
+        
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: grey;
+        color: black;
+        border: 1px solid #999;
+        padding: 0.5rem;
+        
+    }
+
+    title Sandbox Example
+      
+  body 
+    if sandboxNames
+      table#t01
+        
+        th First
+        th Last
+        th Age
+        each name in sandboxNames
+          tr
+            if name.First
+              th= name.First
+            else 
+              th First Name Not Given
+            if name.Last
+              th= name.Last
+            else
+              th Last Name Not Given
+            if name.Age 
+              th= name.Age
+            else
+              th Age Not Given   
+
+
